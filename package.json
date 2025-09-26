@@ -4,14 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev1": "nodemon task_01.js",
-    "dev2": "nodemon task_02.js"
+    "build": "tsc",
+    "dev": "ts-node src/ts/run.ts",
+    "watch": "nodemon --watch src/ts --ext ts --exec ts-node src/ts/run.ts",
+    "dev1": "nodemon src/js/task_01.js",
+    "dev2": "nodemon src/js/task_02.js",
+    "lint": "eslint src/ts --ext .ts",
+    "lint:fix": "eslint src/ts --ext .ts --fix",
+    "format": "prettier --write src/ts/**/*.ts src/js/**/*.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "nodemon": "^3.1.10"
-  }
+    "@eslint/js": "^9.36.0",
+    "@types/node": "^24.5.2",
+    "@typescript-eslint/eslint-plugin": "^8.44.1",
+    "@typescript-eslint/parser": "^8.44.1",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "packageManager": "pnpm@10.17.1+sha512.17c560fca4867ae9473a3899ad84a88334914f379be46d455cbf92e5cf4b39d34985d452d2583baf19967fa76cb5c17bc9e245529d0b98745721aa7200ecaf7a"
 }

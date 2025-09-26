@@ -2,15 +2,15 @@
 // output: 'e'
 
 const uniqValue = (param) => {
-  const frq = {}
+  const frq = {};
   param.split('').forEach((element) => {
     if (frq[element]) {
-      frq[element]++
+      frq[element]++;
     } else {
-      frq[element] = 1
+      frq[element] = 1;
     }
-  })
-  return Object.entries(frq)
-}
+  });
+  return Object.entries(frq);
+};
 
-console.log(uniqValue('abacddbec'))
+console.log(uniqValue('abacddbec'));

@@ -74,7 +74,7 @@
 // bound();
 
 // Чему равна длина arr.length массива arr?
-const alert = console.log
+const alert = console.log;
 
 // let arr = []
 // arr[1] = 1
@@ -83,8 +83,8 @@ const alert = console.log
 // console.log(arr.length)
 // console.log(arr)
 
-let arr = [1, 2, 3]
-arr.something = 5
+let arr = [1, 2, 3];
+arr.something = 5;
 
-alert(arr.something)
-alert(arr)
+alert(arr.something);
+alert(arr);
